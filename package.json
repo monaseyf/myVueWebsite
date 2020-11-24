@@ -11,9 +11,11 @@
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
+    "vue-typed-js": "^0.1.2",
     "vuetify": "^2.1.0"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
     "@vue/cli-plugin-babel": "^3.9.0",
     "@vue/cli-plugin-eslint": "^3.9.0",
     "@vue/cli-service": "^3.9.0",
