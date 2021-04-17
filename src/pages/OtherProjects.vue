@@ -1,5 +1,5 @@
 <template>
-<v-container class="section">
+<v-container >
     <v-row>
         <v-col lg="3" md="3" sm="12" v-on:click="activeSegment0">
             <p>All </p>
@@ -18,22 +18,22 @@
     <v-row>
         <v-col lg="12" md="12" sm="12">
             <div v-if="type === 0">
-                <p className="otherProjectsParagraph">
+                <p class="otherProjectsParagraph">
                     Doing artistic work gives me a great deal of pleasure.
                 </p>
             </div>
             <div v-else-if="type === 1" >
-                <p className="otherProjectsParagraph">
+                <p class="otherProjectsParagraph">
                     These are some of my handmade
                     posters which demonstrate a special meaning.
                 </p>
             </div>
             <div v-else-if="type === 2">
-                <p className="otherProjectsParagraph">
+                <p class="otherProjectsParagraph">
                     I love to express my imagination in sketches and drawings. </p>
             </div>
             <div v-else-if="type === 3">
-                <p className="otherProjectsParagraph">
+                <p class="otherProjectsParagraph">
                     It was a group project to design an intractive space.A performance was also design
                     to disoriented the meaning of human body </p>
             </div>

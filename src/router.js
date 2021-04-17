@@ -54,5 +54,17 @@ export default new Router({
             component: () =>
                 import ("./pages/OtherProjects.vue"),
         },
+        {
+            path: "/photography",
+            name: "photography",
+            component: () =>
+                import ("./pages/photography.vue"),
+        },
+        {
+            path: "/Ui",
+            name: "Ui",
+            component: () =>
+                import ("./pages/Ui.vue"),
+        },
     ],
 });

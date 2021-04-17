@@ -1,5 +1,5 @@
 <template>
-   <div>
+   <div class="ArchSection"> 
       
      <ArchSample v-bind:Arch="Arch" ></ArchSample>
   

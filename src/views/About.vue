@@ -1,18 +1,18 @@
 <template>
-<div :style="image" id="aboutMeSection" class="section">
+<div :style="image" id="aboutMeSection" >
   <v-container  >
     <v-row class="innerDiv">
       <v-col  lg = "4" md = "4" sm ="12">
        
         <div  v-on:mouseover="activeSegmentA">
-          <h4 class="segmentTitle">B.Sc.In Architecture</h4>
+          <h4 class="segmentTitleA">B.Sc.In Architecture</h4>
         </div>
         
         <div  v-on:mouseover="activeSegmentB">
-           <h4 class="segmentTitle">Ui/Ux Design</h4>
+           <h4 class="segmentTitleA">Ui/Ux Design</h4>
         </div>
         <div  v-on:mouseover="activeSegmentC">
-           <h4 class="segmentTitle"> Other Expriences</h4>
+           <h4 class="segmentTitleA"> Other Expriences</h4>
         </div>
         
 
@@ -54,7 +54,7 @@
 export default {
   data() {
     return { 
-      image:{ backgroundImage: `url(${require("../images/aboutMe/1.jpg")})` },
+      image:{ backgroundImage: `url(${require("../images/aboutMe/1.jpg")})`},
       
       hover: false,
       type:'A',
@@ -77,6 +77,9 @@ export default {
 </script>
 
 <style scoped>
+.backgroundFilter {
+  filter:blur(1px)
+}
 #aboutMeSection {
     background-size: cover;
     width: 100%;
@@ -92,7 +95,7 @@ export default {
     top: 0;
 }
 
-.segmentTitle {
+.segmentTitleA {
     color: #ffffff;
     font-family: "Pacifico", cursive;
     line-height: 2;
@@ -101,7 +104,7 @@ export default {
     transition: all 500ms;
 }
 
-.activeSegmentTitle {
+.segmentTitleA:hover {
     color: #e22b6f;
     border-bottom: solid 1px #e22b6f;
     border-radius: 5px;

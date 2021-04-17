@@ -1,5 +1,5 @@
 <template>
-  <section id="portfolioSection" class="section">
+  <section id="portfolioSection" >
     <h1 class="sectionTitle">Portfolio</h1>
 
     <v-row>
@@ -12,15 +12,19 @@
       </v-col>
 
       <v-col class="col-lg-3 col-md-6 col-sm-12">
+      <router-link to="Ui">
         <div class="categoryContainer" :style="imageOne">
           <h3 class="categoryTitle">UI/UX Projects</h3>
         </div>
+        </router-link>
       </v-col>
 
       <v-col class="col-lg-3 col-md-6 col-sm-12">
+      <router-link to="photography">
         <div class="categoryContainer" :style="imageTwo">
           <h3 class="categoryTitle">photographies</h3>
         </div>
+      </router-link>
       </v-col>
    
       <v-col class="col-lg-3 col-md-6 col-sm-12">

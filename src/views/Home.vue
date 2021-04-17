@@ -1,11 +1,12 @@
 <template>
-<div class="home">
+<div class="home" v-intersect="showMoreContent">
 
      <welcome/> 
-     <About/>
-     <Portfolio/>
-    <Testimonials/>
-    <ContactMe/>
+     <About v-if="loadNewContent"/>
+     <Portfolio  />
+     <Skills />
+    <Testimonials />
+    <ContactMe />
 
 </div>
 </template>
@@ -26,6 +27,7 @@ export default {
         welcome,
         About,
        Portfolio,
+       Skills,
        Testimonials,
        ContactMe,
 
@@ -34,19 +36,19 @@ export default {
     data() {
 
         return {
-
+            loadNewContent: false,
            
         }
     },
 
     methods: {
-        
+        showMoreContent(entries) {
+      this.loadNewContent = entries[0].isIntersecting
+    },
     }
 };
 </script>
 
 <style scoped>
-.home {
-    min-height: 100%;
-}
+
 </style>

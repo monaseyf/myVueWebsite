@@ -9,7 +9,7 @@
                 {{item.title}}
             </v-card-title>
             <v-card-text >
-                ID: {{item.id}}
+               
                 <br/>
                 Age: {{item.date}}
               
@@ -24,7 +24,13 @@
 
 export default {
     props:['Arch'],
-
+    pops: {
+        Arch: {
+            type: Array,
+            required: false,
+            default: []
+        }
+    },
     data() {
             return {
                

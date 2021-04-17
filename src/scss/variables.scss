@@ -18,7 +18,17 @@ $heading-font-family: "Merriweather";
 img{
     width:100%
 }
-
+.section{
+    min-height:100vh;
+    margin: 0 20%;
+}
+.home { 
+    background-color: black;
+    min-height: 100%;
+}
+h1, h2, h3, h4, h5, h6, p {
+    color: white;
+}
 /* Portfolio */
 
 #portfolioSection {
@@ -72,3 +82,97 @@ img{
 
 
 /* Portfolio */
+
+/* Arch Projects*/
+
+.ArchSection {
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+/* Arch Projects*/
+
+
+/* Skills */
+
+.segmentTitle {
+    color: #ffffff;
+    font-family: "Pacifico", cursive;
+    line-height: 2;
+    text-align: center;
+    cursor: pointer;
+    transition: all 500ms;
+}
+.segmentTitle:hover {
+    color:  #e22b6f;
+    font-family: "Pacifico", cursive;
+    line-height: 3;
+    text-align: center;
+    cursor: pointer;
+    transition: all 500ms;
+    font-weight: bold;
+}
+.tabContainer {
+    cursor: pointer;
+}
+
+.activeTabContainer {
+    border-bottom: solid 2px #e22b6f;
+    border-radius: 10px;
+}
+
+.tabTitle {
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    transition: all 500ms;
+}
+
+.activeTabTitle {
+    color: #e22b6f;
+    font-size: 25px;
+    transition: all 500ms;
+}
+
+/* Skills */
+
+/* Contact */
+
+/* Contact */
+
+/* Ui */
+.UiLogo {
+    width: 50px;
+    height: 50px;
+}
+
+.UiTitle {
+    font-family: montserrat, sans-serif;
+}
+
+.descriptTow {
+    background: #3c3c3c;
+    border-radius: 1rem;
+}
+
+.descriptOne {
+    text-align: justify;
+}
+.UiPhoto {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.UiPhoto:hover {
+    width: 100%;
+    border-radius: 1rem;
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+.descript {
+    background: #252525;
+    border-radius: 1rem;
+    text-align: center;
+}
+/* Ui */
+
